@@ -1,0 +1,337 @@
+/* Flex container to hold sidebar and main content */
+.flex-container {
+    display: flex;
+    height: 100vh;
+}
+
+.header-title {
+    color: #000;
+    /* Black color for header title */
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 33px;
+}
+
+.basic-details {
+    color: #000;
+    /* Black color for basic details */
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.address-header {
+    color: #000;
+    /* Black color for address header */
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Main content styling */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f8f9fa;
+
+}
+
+/* Welcome section styling */
+.welcome-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+h2 {
+    margin: 0;
+}
+
+/* Form row layout */
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    /* Adds margin to the left for form fields */
+}
+
+.form-group {
+    flex: 1;
+    position: relative;
+    margin-top: 10px;
+}
+
+/* Input and select styling */
+.form-group input,
+.form-group select {
+    width: 85%;
+    /* Adjust width to make form elements smaller */
+    padding: 6px;
+    /* Reduced padding */
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #000;
+    /* Black color for input text */
+    margin-left: 20px;
+    /* Adds margin to the left */
+    transition: border-color 0.3s;
+}
+
+/* Floating label input field styling */
+.floating-input {
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    /* Add more padding to the left to ensure more space for the label */
+    border: 2px solid #f8f9fa;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    position: relative;
+    /* Position relative for label positioning */
+    color: #000;
+    /* Black color for input text */
+}
+
+/* Floating input focus styling */
+.floating-input:focus {
+    outline: none;
+    border: 1px solid #2e86de;
+    /* Changed border to blue when focused */
+}
+
+/* Floating label styling */
+.floating-label {
+    position: absolute;
+    left: 30px;
+    /* Move the label a little more towards the right (increase from 20px to 30px) */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    padding: 0 5px;
+    color: #afb4be;
+    /* Grey color for labels */
+    pointer-events: none;
+    z-index: 0;
+    /* Keeps the label behind input text */
+}
+
+/* Move label up when input is focused or has content */
+.floating-input:focus+.floating-label,
+.floating-input:not(:placeholder-shown)+.floating-label {
+    top: 0px;
+    font-size: 12px;
+    color: #6C757D;
+}
+
+/* Label floats when the input has value (valid for required fields or filled fields) */
+.floating-input:valid+.floating-label {
+    top: 0px;
+    font-size: 12px;
+    color: #6C757D;
+    background-color: #f8f9f8;
+}
+
+/* Reset label when input is empty and not focused */
+.floating-input:placeholder-shown+.floating-label,
+.floating-input:not(:focus):invalid+.floating-label {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #afb4be;
+    background-color: #ffffff;
+}
+
+/* Styling for placeholder text */
+.form-group input::placeholder {
+    color: #afb4be;
+    /* Placeholder color set to grey */
+}
+
+/* Dropdown select option */
+.form-group select option {
+    color: #000;
+    /* Black color for select option text */
+}
+
+/* Button styles */
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #2d3e50;
+    color: white;
+    font-family: Arial, sans-serif;
+    float: right;
+    margin-right: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+button[type="button"] {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #2d3e50;
+    color: white;
+    font-family: Arial, sans-serif;
+    float: right;
+    margin-right: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Dropdown select styling */
+.floating-dropdown {
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    /* Space for the label */
+    border: 2px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    position: relative;
+    /* Needed for label positioning */
+    appearance: auto;
+    /* Restores the default dropdown arrow */
+    -webkit-appearance: auto;
+    /* Compatibility in Webkit browsers */
+    -moz-appearance: auto;
+    /* Compatibility in Firefox */
+}
+
+/* Remove the default dropdown icon on Internet Explorer */
+.floating-dropdown::-ms-expand {
+    display: none;
+}
+
+/* Floating label animation when dropdown is focused or not empty */
+.floating-dropdown:focus+.floating-label,
+.floating-dropdown:not(:empty)+.floating-label {
+    top: -10px;
+    left: 30px;
+    /* Align with the input field */
+    font-size: 12px;
+    color: #6C757D;
+    /* Change color when floating label goes to the top */
+    transform: translateY(0);
+    z-index: 1;
+    /* Bring label to the front */
+    background-color: #f8f9f8;
+}
+
+/* When dropdown is not focused but has a value, keep the label floating */
+.floating-dropdown:not(:focus):not(:empty)+.floating-label {
+    top: -10px;
+    left: 30px;
+    font-size: 12px;
+    color: #6C757D;
+    /* Change color when floating label goes to the top */
+    z-index: 1;
+}
+
+/* Ensure the dropdown has the correct focus styling */
+.floating-dropdown:focus {
+    outline: none;
+    border: 1px solid #2e86de;
+    /* Blue border on focus */
+}
+
+
+/* Style for the small checkbox with a tick */
+.floating-checkbox {
+    width: 16px;
+    height: 16px;
+    appearance: none;
+    border: 2px solid #6C757D;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    margin-left: 40px;
+    margin-right: 10px;
+    vertical-align: bottom;
+    /* Align checkbox to baseline */
+}
+
+
+.floating-checkbox:checked {
+    background-color: #007BFF;
+    border-color: #007BFF;
+}
+
+.floating-checkbox:checked::after {
+    content: "\2713";
+    /* Unicode for checkmark */
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.floating-checkbox:hover {
+    border-color: #0056b3;
+}
+
+/* Label style for Virtual Account text */
+.floating-label-virtual {
+    color: #6C757D;
+    font-size: 14px;
+    vertical-align: 1px;
+}
+
+/* Wrapper for checkbox and label */
+.checkbox-label-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* Align the checkbox and label to the left */
+    margin-bottom: 10px;
+    /* Add some spacing below */
+}
+
+textarea.floating-input {
+    width: 85%;
+    max-width: 850px;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: -20px;
+}
+

@@ -1,0 +1,80 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Correcting the box-sizing to 'border-box' for consistent width/height calculations */
+  z-index: 50;
+}
+
+.bar {
+  background-color: black;
+  width: 60px;
+  max-height: 100vh; /* Full height of the viewport */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0; /* Ensure the bar starts at the top of the viewport */
+  z-index: 50;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align icons to the start */
+  align-items: center;
+  margin-bottom: -10px; /* Reduced gap between icons */
+}
+.symbol {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #f88e8e;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+   /* Adjust this margin as necessary */
+}
+
+.symbol-letter {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0a0a0a;
+}
+
+/* Adjusting icon size and hover effect */
+.icons svg {
+  height: 22px;
+  width: 18px;
+  cursor: pointer;
+}
+
+.icons-svg {
+  padding: 10px 12px; /* Adjusted padding */
+  border-radius: 8px; /* Curved border */
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+.icons-svg:hover {
+  background-color: #615e5e; 
+  
+}
+
+/* Card Styling */
+.card, .feature-card {
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 350px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  position: absolute;
+  top: 60px; /* Adjust as necessary for correct positioning */
+  left: 70px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+}

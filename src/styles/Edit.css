@@ -1,0 +1,164 @@
+/* Overall container layout */
+.fcontainer {
+    display: flex;
+    width: 100%; /* Full width for the container */
+}
+
+/* Main content area */
+.mcontent {
+    flex: 1; /* Full width for the main content */
+    padding: 3%;
+    background-color: #ecf0f1;
+    height: 100vh;
+    overflow-y: auto;
+    margin-right: 0; /* Remove margin if you need it to take full width */
+    border-radius: 8px;
+}
+
+/* Header and title */
+.hdr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centered items in the header */
+    margin-bottom: 20px;
+}
+
+.htitle {
+    color: #0b0c0d; /* Darker color for better visibility */
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.hdr a {
+    text-decoration: none;
+    color: #2980b9; /* Slightly brighter link color */
+}
+
+/* Section titles */
+.bdetails,
+.address-header,
+.additional-details {
+    color: #2c3e50; /* Consistent section title color */
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.stitle {
+    color: #040405; /* Change this to your desired color */
+    font-size: 18px; /* Optional: Adjust font size */
+    font-weight: bold; /* Optional: Make it bold */
+    margin-bottom: 5px; /* Optional: Space below the title */
+}
+
+/* Form layout */
+.frow {
+    display: flex;
+    gap: 15px; /* Slightly reduced gap */
+    margin-bottom: 15px;
+}
+
+.fgroup {
+    flex: 1;
+    position: relative; /* Position relative for label positioning */
+}
+
+/* Floating label styling */
+.floating-label {
+    position: absolute;
+    left: 30px; /* Position the label */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    background-color: #ecf0f1; /* Match the input background */
+    padding: 0 5px;
+    color: #afb4be; /* Grey color for labels */
+    pointer-events: none;
+    z-index: 0; /* Keeps the label behind input text */
+}
+
+/* Move the label when input is focused or filled */
+.fgroup input:focus + .floating-label,
+.fgroup input:not(:placeholder-shown) + .floating-label,
+.fgroup select:focus + .floating-label,
+.fgroup select:not(:empty) + .floating-label {
+    top: -10px; /* Move the label up */
+    left: 30px; /* Ensure label stays in the same position */
+    font-size: 12px;
+    color: #6C757D; /* Change color when floating label goes to the top */
+    transform: translateY(0);
+    z-index: 1; /* Bring label to the front */
+}
+
+/* Keep the label in its original position when input is not focused and empty */
+.fgroup input:not(:placeholder-shown):not(:focus) + .floating-label,
+.fgroup select:not(:focus):not(:empty) + .floating-label {
+    top: 50%;
+    left: 300px; /* Positioned more to the right */
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #afb4be; /* Grey color for labels */
+}
+
+
+
+/* Input and select styling */
+.fgroup input,
+.fgroup select {
+    width: 100%; /* Full width of the input field */
+    padding: 12px; /* Add padding for better touch target */
+    border: 1px solid #dcdcdc; /* Light border color */
+    border-radius: 4px; /* Slightly rounded corners */
+    outline: none; /* Remove outline */
+    background-color: #423e3e; /* Background color of input */
+    font-size: 16px; /* Font size for inputs */
+    color: #0b0c0d; /* Darker text color */
+}
+
+/* Change border color on focus */
+.fgroup input:focus,
+.fgroup select:focus {
+    border-color: #2980b9; /* Change border color on focus */
+}
+
+/* Floating dropdown styling */
+.floating-dropdown {
+    /* Additional styles for dropdowns if needed */
+}
+
+/* Action buttons */
+.factions {
+    margin-top: 20px; /* Space between form and buttons */
+    display: flex; /* Flex layout for buttons */
+    gap: 10px; /* Space between buttons */
+}
+
+.edit-button,
+.cancel-button {
+    padding: 12px 20px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.edit-button {
+    background-color: #2980b9; /* Button color */
+    color: white; /* Text color */
+}
+
+.cancel-button {
+    background-color: #e74c3c; /* Cancel button color */
+    color: white; /* Text color */
+}
+
+/* Button hover effects */
+.edit-button:hover {
+    background-color: #1f6393; /* Darken on hover */
+}
+
+.cancel-button:hover {
+    background-color: #c0392b; /* Darken on hover */
+}

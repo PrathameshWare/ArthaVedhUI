@@ -1,0 +1,14 @@
+.main-img {
+  display: flex;
+  justify-content: center;
+  /* Center the image horizontally */
+  object-fit: cover;
+  height: 88vh;
+  /* Adjust height as needed */
+}
+
+.main-img img {
+  max-width: 100%;
+  /* Ensure the image scales responsively */
+  width: 90%;
+}

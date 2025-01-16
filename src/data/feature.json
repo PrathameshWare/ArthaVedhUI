@@ -1,0 +1,305 @@
+{
+    "features1": [
+      {
+        "icon": "clock",
+        "title": "Dynamic Budgeting Interface",
+        "api":"budgeting-interface"
+      },
+      {
+        "icon": "chart-line",
+        "title": "Forecasting Models",
+        "api":"forcasting-model"
+      },
+      {
+        "icon": "cog",
+        "title": "Expense Categorization AI",
+        "api":"exp-categorization"
+      },
+      {
+        "icon": "sync-alt",
+        "title": "Zero-based Budgeting AI Assistant",
+        "api": "zero-budgeting"
+      },
+      {
+        "icon": "chart-bar",
+        "title": "Budget Health Metrics",
+        "api":"health-metrics"
+      },
+      {
+        "icon": "chart-area",
+        "title": "Historical Budget Trends Analysis",
+        "api": "trends-analysis"
+      },
+      {
+        "icon": "bullhorn",
+        "title": "Variable Expense Predictor",
+        "api":"expense-predictor"
+      },
+      {
+        "icon": "cube",
+        "title": "What-If Scenario Planning",
+        "api": "scenario-planning"
+      }
+    ],
+    "features2": [
+      {
+        "icon": "credit-card",
+        "title": "AI Savings Recommendations",
+        "api":"savings-recommendation"
+      },
+      {
+        "icon": "cog",
+        "title": "Automated Investment Analysis",
+        "api":"auto-investment"
+      },
+      {
+        "icon": "home",
+        "title": "Retirement Planning AI Advisor",
+        "api":"retirement-plan"
+      },
+      {
+        "icon": "people-carry",
+        "title": "Goal-based Investment Allocation",
+        "api":"goalbased-investment"
+      },
+      {
+        "icon": "database",
+        "title": "Risk Tolerance Assessment Tool",
+        "api":"risk-tool"
+      },
+      {
+        "icon": "star",
+        "title": "Savings Milestone Tracker",
+        "api":"milestone-tracker"
+      },
+      {
+        "icon": "wifi",
+        "title": "Educational Investment Content",
+        "api":"education-investment"
+      },
+      {
+        "icon": "arrow-up",
+        "title": "Market Trend AI Analysis",
+        "api":"market-trend"
+      }
+    ],
+
+    "features3": [
+      {
+        "icon": "globe",
+        "title": "Trend Line"
+      },
+      {
+        "icon": "file",
+        "title": "Ray"
+      },
+      {
+        "icon": "bell",
+        "title": "Info Line"
+      },
+      {
+        "icon": "compass",
+        "title": "Extended Line"
+      },
+      {
+        "icon": "bookmark",
+        "title": "Trend Angle"
+      },
+      {
+        "icon": "minus",
+        "title": "Horizatal Line"
+      },
+      {
+        "icon": "users",
+        "title": "Horizatal Ray"
+      },
+      {
+        "icon": "lemon",
+        "title": "Vertical Line"
+      },
+      {
+        "icon": "thumbtack",
+        "title": "Cross Line"
+      }
+    ],
+
+    "features4": [
+      {
+        "icon": "wifi",
+        "title": "Fib Retracement"
+      },
+      {
+        "icon": "palette",
+        "title": "Trend-based Fib Retracement"
+      },
+      {
+        "icon": "snowflake",
+        "title": "Fib Channel"
+      },
+      {
+        "icon": "binoculars",
+        "title": "Fib Time Zone"
+      },
+      {
+        "icon": "gamepad",
+        "title": "Fib Speed Resistance Fan"
+      },
+      {
+        "icon": "hashtag",
+        "title": "Trend Based Fib Time"
+      },
+      {
+        "icon": "bath",
+        "title": "Fib Circles"
+      },
+      {
+        "icon": "address-book",
+        "title": "Fib Spiral"
+      },
+      {
+        "icon": "binoculars",
+        "title": "Fib Wedge"
+      },
+      {
+        "icon": "paint-roller",
+        "title": "PitchFan"
+      }
+
+    ],
+    "features5" :[
+      {
+        "title": "AI Debt Repayment Planner",
+        "icon": "robot"
+      },
+      {
+        "title": "Credit Utilization Tracker",
+        "icon": "credit-card"
+      },
+      {
+        "title": "Interest Rate Negotiator",
+        "icon": "percentage"
+      },
+      {
+        "title": "Debt-Free Milestone Celebrations",
+        "icon": "trophy"
+      },
+      {
+        "title": "Bankruptcy Alternatives Guide",
+        "icon": "book"
+      },
+      {
+        "title": "Automated Debt Alerts",
+        "icon": "bell"
+      },
+      {
+        "title": "Debt Consolidation Advisor",
+        "icon": "compress-arrows-alt"
+      },
+      {
+        "title": "Debt Snowball vs. Avalanche Advisor",
+        "icon": "snowflake"
+      },
+      {
+        "title": "Loan Comparison Engine",
+        "icon": "balance-scale"
+      },
+      {
+        "title": "Mortgage Refinancing Analysis",
+        "icon": "home"
+      }
+    ],
+    "features6":[
+      {
+        "title": "Payments Systems",
+        "icon": "money-bill"
+      },
+      {
+        "title": "Treasury Management Systems",
+        "icon": "piggy-bank"
+      },
+      {
+        "title": "Foreign Exchange Platforms",
+        "icon": "globe"
+      },
+      {
+        "title": "Trade Finance Systems",
+        "icon": "briefcase"
+      },
+      {
+        "title": "Asset Management Systems",
+        "icon": "chart-line"
+      },
+      {
+        "title": "Loan Origination and Servicing Systems",
+        "icon": "file-alt"
+      },
+      {
+        "title": "Credit Card Processing Systems",
+        "icon": "credit-card"
+      },
+      {
+        "title": "Online Banking Platforms",
+        "icon": "laptop"
+      },
+      {
+        "title": "EBPP",
+        "icon": "envelope"
+      },
+      {
+        "title": "FIX",
+        "icon": "cogs"
+      },
+      {
+        "title": "Payment Gateways and Merchant Services",
+        "icon": "door-open"
+      },
+      {
+        "title": "Point of Sale (POS) Systems",
+        "icon": "cash-register"
+      },
+      {
+        "title": "Crowdfunding Platforms",
+        "icon": "users"
+      }
+    ],
+    "features7" :[
+      {
+        "title": "IRS Audit Risk Assessor",
+        "icon": "file-invoice-dollar"
+      },
+      {
+        "title": "Charitable Contributions Optimizer",
+        "icon": "hand-holding-usd"
+      },
+      {
+        "title": "Self-Employment Tax Helper",
+        "icon": "user-tie"
+      },
+      {
+        "title": "Capital Gains Strategy Tool",
+        "icon": "chart-bar"
+      },
+      {
+        "title": "Tax Records Organizer",
+        "icon": "folder"
+      },
+      {
+        "title": "Retirement Tax Impact Analyzer",
+        "icon": "chart-pie"
+      },
+      {
+        "title": "State Tax Comparison Tool",
+        "icon": "map"
+      },
+      {
+        "title": "Tax Deduction Finder",
+        "icon": "search-dollar"
+      },
+      {
+        "title": "Income Tax Estimator",
+        "icon": "calculator"
+      }
+    ]
+
+
+  }

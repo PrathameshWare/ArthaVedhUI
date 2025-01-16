@@ -1,0 +1,82 @@
+{
+    "features1": [
+        {
+          "title": "Track Accounts",
+          "icon": "wallet"
+        },
+        {
+          "title": "Monitor Categories",
+          "icon": "tags"
+        },
+        {
+          "title": "Track Transactions",
+          "icon": "file-invoice-dollar"
+        }
+      ],
+      "features2": [
+        {
+          "title": "Low Balance Alerts",
+          "icon": "exclamation-triangle"
+        },
+        {
+          "title": "Large Transactions",
+          "icon": "money-check-alt"
+        },
+        {
+          "title": "Unusual Spending",
+          "icon": "chart-bar"
+        }
+      ],
+      "features3": [
+        {
+          "title": "View Statements",
+          "icon": "file-alt"
+        },
+        {
+          "title": "Check Invoices",
+          "icon": "file-invoice"
+        }
+      ],
+      "features4": [
+        {
+          "title": "Investment Trends",
+          "icon": "chart-pie"
+        },
+        {
+          "title": "Budgeting Tips",
+          "icon": "calculator"
+        },
+        {
+          "title": "Planning Tools",
+          "icon": "tools"
+        }
+      ],
+      "features5": [
+        {
+          "title": "Talk to Advisors",
+          "icon": "user-friends"
+        },
+        {
+          "title": "Join Community",
+          "icon": "comments"
+        },
+        {
+          "title": "Share Insights",
+          "icon": "lightbulb"
+        }
+      ],
+      "features6": [
+        {
+          "title": "Explore Strategies",
+          "icon": "search-dollar"
+        },
+        {
+          "title": "Share Ideas",
+          "icon": "share-alt"
+        },
+        {
+          "title": "User Stories",
+          "icon": "user-check"
+        }
+      ]
+}

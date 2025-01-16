@@ -1,0 +1,23 @@
+.body{
+    box-sizing: content-box;
+    padding:0%;
+    margin:0%;
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 15px;
+    height:auto;
+    width: 340px;
+    background-color: black;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: space-evenly;
+    margin:20px 10px;
+}
+.info button{
+    margin: 10px;
+}

@@ -1,0 +1,76 @@
+/* Container for the OTP screen */
+.otp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5; /* Light background for contrast */
+  }
+  
+  /* Box containing the OTP form */
+  .otp-box {
+    width: 350px;
+    padding: 20px;
+    background-color: white; /* White background for the login box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow */
+  }
+  
+  /* Center text alignment */
+  .text-center {
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+  }
+  #nametag{
+    color: #ff0101;
+  }
+  
+  /* Logo styling */
+  .logo-container {
+    display: flex;
+    justify-content: center; /* Centering the logo */
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  /* OTP input fields */
+  .otp-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .otp-input {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: black;
+  }
+  
+  /* OTP button styling */
+  .otp-button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #001f3f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .otp-button:hover {
+    background-color: #004080;
+  }
+  #last-text{
+    color: rgba(128, 128, 128, 0.748);
+    margin-bottom: 10px;
+  }

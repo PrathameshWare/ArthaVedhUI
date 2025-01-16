@@ -1,0 +1,46 @@
+.feature-card-right {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: black;
+  width: 300px;
+  height: auto;
+  position: absolute;
+  right: 70px; /* Position card to the left of the icon */
+  top: 50%; /* Center vertically in the middle of the right bar */
+  transform: translateY(-50%); /* Center adjustment */
+  transition: transform 0.3s, box-shadow 0.3s;
+  z-index: 50;
+}
+
+.feature-card-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-card-right li {
+  display: flex;
+  margin-top: 12px;
+  align-items: center;
+  padding: 10px 0;
+  color: antiquewhite;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.feature-card-right li:last-child {
+  border-bottom: none;
+}
+
+.feature-card-right li i {
+  margin-right: 14px;
+  font-size: 1.3rem;
+}
+
+/* Hover effect for both icons and feature cards */
+.feature-card-right li:hover {
+  background-color: #615e5e;
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(246, 242, 242, 0.4);
+}

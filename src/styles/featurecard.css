@@ -1,0 +1,38 @@
+.feature-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: black;
+    width: 350px;
+    height: auto;
+  }
+  
+  .feature-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .feature-card li {
+    display: flex;
+    margin-top: 12px;
+    align-items: center;
+    padding: 10px 0;
+    color: antiquewhite;
+    border-bottom: 1px solid white; /* Add this line for the white separator */
+    cursor: pointer;
+  }
+  .feature-card li:hover{
+    background-color: rgba(225, 216, 216, 0.127);
+  }
+  
+  .feature-card li:last-child {
+    border-bottom: none; /* Remove the border from the last item */
+  }
+  
+  .feature-card li i {
+    margin-right: 14px;
+    font-size: 1.3rem;
+
+  }
+  
